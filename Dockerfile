@@ -1,6 +1,6 @@
 FROM alpine:3.3
 
-ENV VERSION 1.1.19
+ENV VERSION 1.1.20
 
 RUN set -ex \
         && apk add --no-cache --virtual .phraseapp-build \
