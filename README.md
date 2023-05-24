@@ -1,6 +1,6 @@
-# Phraseapp docker
+# Phrase docker
 
-Run [phraseapp cli][cli] in a docker container.
+Run [phrase cli][cli] in a docker container.
 
 ## Usage
 
@@ -14,5 +14,5 @@ Pull translations from phraseapp to your project:
 
 See more examples on the [CLI readme][readme].
 
-[cli]: https://phraseapp.com/cli
-[readme]: https://github.com/phrase/phraseapp-client/blob/master/README.md
+[cli]: https://github.com/phrase/phrase-cli
+[readme]: https://github.com/phrase/phrase-cli/blob/master/README.md
