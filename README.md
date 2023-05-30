@@ -6,11 +6,11 @@ Run [phrase cli][cli] in a docker container.
 
 Initialize and configure your project:
 
-    docker run --rm -ti -v $PWD:/code -w /code ghcr.io/francois2metz/phrase init
+    docker run --rm --tty --interactive --volume $(pwd):/code --workdir /code ghcr.io/francois2metz/phrase init
 
 Pull translations from phraseapp to your project:
 
-    docker run --rm -ti -v $PWD:/code -w /code ghcr.io/francois2metz/phrase pull
+    docker run --rm --tty --interactive --volume $(pwd):/code --workdir /code ghcr.io/francois2metz/phrase pull
 
 See more examples on the [CLI readme][readme].
 
