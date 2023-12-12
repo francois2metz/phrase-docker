@@ -1,0 +1,25 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base"
+  ],
+  "packageRules": [
+        {
+            "description": "autoMerge upgrade",
+            "matchDatasources": ["github-tags"],
+            "matchManagers": [ "regex" ],
+            "matchPackageNames": ["phrase/phrase-cli"],
+            "matchUpdateTypes": ["minor", "patch"],
+            "automerge": true,
+            "platformAutomerge": true
+        }
+    ],
+    "regexManagers": [
+        {
+            "fileMatch": ["^Dockerfile$"],
+            "matchStrings": ["ENV VERSION (?<currentValue>.*?)\\n"],
+            "depNameTemplate": "phrase/phrase-cli",
+            "datasourceTemplate": "github-releases"
+        }
+    ]
+}
